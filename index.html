@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>GameInfinitoFuerte</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="wrapper" class="overlay-full">
+    <canvas id="canvas" width="800px" height="600px">
+        Ваш браузер не поддерживает "canvas". Пожалуйста, воспользуйтесь другим браузером.
+    </canvas>
+</div>
+
+<div id="scoreboard" class="overlay-full">
+    <span class="overlay-text" id="scoreboard-text">
+        Таблица рекордов
+    </span>
+    <span class="big-button" id="scoreboard-clear" style="margin-right: 150px " onclick="if( confirm(`Вы дейтвительно хотите удалить рекорды?`) ) {getScoreManager().clearSaves(); location.reload(); }">
+        Очистить таблицу рекордов
+    </span>
+    <span class="big-button" style="margin-left: 150px " id="scoreboard-close" onclick="scoreboard(false);">
+        Закрыть
+    </span>
+</div>
+
+
+<div id="overlay" class="overlay-full">
+    <span id="ok-button" class="hudge-button" onclick="launch();">
+        Начать
+    </span>
+</div>
+
+<span>
+    <a  id="info" href="#" onclick="scoreboard(true);">Рекорды</a>
+</span>
+<script>
+    // Базовое создание холста и его обводка
+    let canvas = document.getElementById('canvas');
+    var context = canvas.getContext('2d');
+    canvas.width = 640;
+    canvas.height = 480;
+    context.moveTo(0, 0);
+    context.lineTo(canvas.width, canvas.height);
+    context.moveTo(canvas.width, 0);
+    context.lineTo(0, canvas.height);
+    context.strokeStyle = 'green';
+    context.lineWidth = 10;
+    context.stroke();
+    context.fillStyle = "#9ea7b8"
+
+</script>
+<script src="engine/mapManager.js"></script>
+<script src="engine/spriteManager.js"></script>
+<script src="engine/eventsManager.js"></script>
+<script src="engine/gameManager.js"></script>
+<script src="engine/physicManager.js"></script>
+<script src="engine/hudManager.js"></script>
+<script src="engine/scoreManager.js"></script>
+<script src="engine/audioManager.js"></script>
+<script src="engine/entity.js"></script>
+<script src="resource/mapsDescription.js"></script>
+<script src="resource/entities/player.js"></script>
+<script src="resource/entities/trigger.js"></script>
+<script src="resource/entities/cartridges.js"></script>
+<script src="resource/entities/enemyBullet.js"></script>
+<script src="resource/entities/testBullet.js"></script>
+<script src="resource/entities/enemy.js"></script>
+<script src="resource/entities/enemyBody.js"></script>
+<script src="settings.js"></script>
+
+</body>
+</html>

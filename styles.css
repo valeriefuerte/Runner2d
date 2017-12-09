@@ -1,0 +1,139 @@
+body {
+    padding: 0px;
+    background: url("resource/images/battleback2.png") no-repeat;
+    background-size: 100%; /* Расширение фона современными браузерами */
+}
+
+#canvas {
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateZ(0) translateX(-50%) translateY(-50%) scaleX(1.25) scaleY(1.25);
+    filter: contrast(105%) brightness(120%) blur(0px) saturate(130%);
+    background: url("resource/images/battleback2.png");
+    border: 5px solid darkcyan;
+}
+
+.overlay-full {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-color: #4a412e;
+}
+#overlay {
+    background-image: url("resource/images/apl.png");
+    background-size: contain;
+}
+
+#scoreboard {
+    z-index: 800;
+    display: none;
+    padding: 100px;
+}
+
+#musicInfo #musicInfo-wrap #musicInfo-text {
+    font: 26px 'arial';
+    color: darkcyan;
+    text-align: center;
+}
+
+
+#scoreboard .overlay-text {
+    display: block;
+    font: 20px 'arcade-classic', 'Impact';
+    color: lightcoral;
+    text-align: center;
+    height: 100%;
+    overflow: auto;
+}
+
+#scoreboard .overlay-text b {
+    color: darkcyan;
+}
+
+#scoreboard-close, #scoreboard-clear {
+    position: absolute;
+    bottom: 100px;
+    margin: 10px;
+    left: 46%;
+}
+
+#scoreboard-close {
+    transform: translateX(5px);
+}
+
+#scoreboard-clear {
+    transform: translateX(-101%);
+}
+.hudge-button{
+    display: block;
+    padding: 40px 60px;
+    font: 50px 'arial';
+    cursor: pointer;
+    background: lightcoral;
+    border: 4px solid #000000;
+    color: #000000;
+}
+.big-button {
+    display: block;
+    padding-top: 30px;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-bottom: 90px;
+    height: 70px;
+    width: 100px;
+    border-radius: 50px;
+    font: 18px 'arial';
+    cursor: pointer;
+    background: lightcoral;
+    border: 4px solid #000000;
+    color: #000000;
+    text-align: center;
+}
+
+.big-button:hover {
+    background: lightcoral;
+}
+
+#ok-button, #music-info-close {
+    position: absolute;
+    bottom: 20px;
+    margin: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#info {
+    display: block;
+
+    bottom: 5px;
+    padding-top: 25px;
+   transform: translateX(-50%);
+
+    font: 15px  'arial';
+    color: #000000;
+    float: right;
+    background-color: lightcoral;
+    border-radius: 40px;
+    height: 50px;
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+    border: 4px solid #000000;
+    margin: 20px;
+}
+#info:hover{
+    background-color: lightcoral;
+}
+
+#info a, #info a:visited {
+    color: #fafaff;
+}
