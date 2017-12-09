@@ -36,7 +36,7 @@
                  "gid":17,
                  "height":32,
                  "id":6,
-                 "name":"enemy12",
+                 "name":"monster21",
                  "properties":
                     {
                      "difficulty":"0.40000000000000002"
@@ -84,7 +84,7 @@
                  "gid":17,
                  "height":32,
                  "id":27,
-                 "name":"enemy24",
+                 "name":"monster22",
                  "properties":
                     {
                      "difficulty":"1"
@@ -100,7 +100,7 @@
                  "gid":17,
                  "height":32,
                  "id":36,
-                 "name":"enemy1",
+                 "name":"monster23",
                  "properties":
                     {
                      "difficulty":"0.40000000000000002"
@@ -196,7 +196,7 @@
                  "gid":25,
                  "height":32,
                  "id":50,
-                 "name":"",
+                 "name":"lollipop24",
                  "properties":
                     {
 

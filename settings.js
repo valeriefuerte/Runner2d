@@ -1,6 +1,6 @@
+//Настройки игры
 var levelBriefDuration = 8000;
-var gameSpeed = 20;
-
+var gameSpeed = 15;
 var map  = new mapManager();
 var sprite  = new spriteManager();
 var events  = new eventsManager();
@@ -21,11 +21,11 @@ function getHudManager() { return hud; }
 function getAudioManager() { return audio; }
 function getScoreManager() { return score; }
 
-function completedLevel(l) {
+function completedLevel(l) { //конец уровня и переход к следующему
     startLevel(l + 1);
 }
 
-function startLevel(lvl) {
+function startLevel(lvl) { //уровень
     if(lvl < gameScenes.length) {
         getAudioManager().stopAll();
         getAudioManager().play(gameScenes[lvl].music, { looping: true });
@@ -57,19 +57,16 @@ function startLevel(lvl) {
         getGameManager().clearScreen();
         getHudManager().drawHero('endlevel');
         getHudManager().drawTitleText('Игра закончена!');
-        getHudManager().drawSubtitleText(`Ваш текущий счет: ${totalScore}`);
+        getHudManager().drawSubtitleText('Ваш счет: ${totalScore}');
 
     }
 }
 
 // Загрузка ресурсов игры
 function resourcesLoaded() {
-
     // Начало игры
     setTimeout( () => { startLevel(getScoreManager().currentLevel) }, 100 );
-
     console.log('loaded all');
-    //getHudManager().drawHero('endlevel');
 }
 
 function storageAvailable(type) {
@@ -94,7 +91,7 @@ function storageAvailable(type) {
 function div(val, by){
     return (val - val % by) / by;
 }
-
+//Таблица рекордов
 function scoreboard(scoreTable) {
     let scoreboardElement = document.getElementById('scoreboard');
     let scoreboardTextElement = document.getElementById('scoreboard-text');
@@ -105,8 +102,8 @@ function scoreboard(scoreTable) {
 
         for(let i = 0; i < gameScenes.length; i++) {
             scoreboardTextElement.innerHTML += (`<b>${gameScenes[i].title}</b><br />`);
-            scoreboardTextElement.innerHTML += (`Танков убито: ${getScoreManager().storage[i].killed}<br />`);
-            scoreboardTextElement.innerHTML += (`Потрачено патронов: ${getScoreManager().storage[i].fired}<br />`);
+            scoreboardTextElement.innerHTML += (`Убито: ${getScoreManager().storage[i].killed}<br />`);
+            scoreboardTextElement.innerHTML += (`Потрачено: ${getScoreManager().storage[i].fired}<br />`);
             scoreboardTextElement.innerHTML += (`Время: ${getScoreManager().getTimeString(getScoreManager().storage[i].time)}<br />`);
             scoreboardTextElement.innerHTML += (`Счет: ${getScoreManager().storage[i].total}<br /><br />`);
         }

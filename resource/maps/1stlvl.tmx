@@ -43,20 +43,20 @@
     <property name="ammo" value="10"/>
    </properties>
   </object>
-  <object id="2" name="monster1" type="Enemy" gid="17" x="446" y="570" width="32" height="32">
+  <object id="2" name="monster11" type="Enemy" gid="17" x="446" y="570" width="32" height="32">
    <properties>
     <property name="difficulty" value="0.29999999999999999"/>
    </properties>
   </object>
-  <object id="5" name="monster2" type="Enemy" gid="17" x="638.667" y="736" width="32" height="32">
+  <object id="5" name="monster12" type="Enemy" gid="17" x="638.667" y="736" width="32" height="32">
    <properties>
     <property name="difficulty" value="0.40000000000000002"/>
    </properties>
   </object>
   <object id="17" name="trigger_levelend" type="PlayerTrigger" gid="13" x="896" y="768" width="32" height="32"/>
   <object id="18" name="trigger_levelend" type="PlayerTrigger" gid="13" x="896" y="736" width="32" height="32"/>
-  <object id="21" name="lollipop2" gid="25" x="734" y="448" width="32" height="32"/>
-  <object id="22" name="lollipop1" gid="25" x="222" y="680" width="32" height="32"/>
-  <object id="26" name="lollipop3" gid="25" x="772" y="742" width="32" height="32"/>
+  <object id="21" name="lollipop12" gid="25" x="734" y="448" width="32" height="32"/>
+  <object id="22" name="lollipop11" gid="25" x="222" y="680" width="32" height="32"/>
+  <object id="26" name="lollipop13" gid="25" x="772" y="742" width="32" height="32"/>
  </objectgroup>
 </map>

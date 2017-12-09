@@ -36,7 +36,7 @@
                  "gid":17,
                  "height":32,
                  "id":2,
-                 "name":"monster1",
+                 "name":"monster11",
                  "properties":
                     {
                      "difficulty":"0.29999999999999999"
@@ -52,7 +52,7 @@
                  "gid":17,
                  "height":32,
                  "id":5,
-                 "name":"monster2",
+                 "name":"monster12",
                  "properties":
                     {
                      "difficulty":"0.40000000000000002"
@@ -100,7 +100,7 @@
                  "gid":25,
                  "height":32,
                  "id":21,
-                 "name":"lollipop2",
+                 "name":"lollipop12",
                  "properties":
                     {
 
@@ -116,7 +116,7 @@
                  "gid":25,
                  "height":32,
                  "id":22,
-                 "name":"lollipop1",
+                 "name":"lollipop11",
                  "properties":
                     {
 
@@ -132,7 +132,7 @@
                  "gid":25,
                  "height":32,
                  "id":26,
-                 "name":"lollipop3",
+                 "name":"lollipop13",
                  "properties":
                     {
 

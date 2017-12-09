@@ -67,7 +67,7 @@ body {
     padding: 30px 60px;
     font: 50px 'arial';
     cursor: pointer;
-    background: lightcoral;
+    background: darkcyan;
     border: 1px solid #000000;
     color: #000000;
 }
@@ -82,14 +82,14 @@ body {
     border-radius: 5px;
     font: 18px 'arial';
     cursor: pointer;
-    background: lightcoral;
+    background: darkcyan;
     border: 1px solid #000000;
     color: #000000;
     text-align: center;
 }
 
 .big-button:hover {
-    background: lightcoral;
+    background: darkcyan;
 }
 
 #ok-button, #music-info-close {
@@ -110,7 +110,7 @@ body {
     font: 15px  'arial';
     color: #000000;
     float: right;
-    background-color: lightcoral;
+    background-color: darkcyan;
     border-radius: 5px;
     height: 50px;
     width: 80px;
@@ -120,7 +120,7 @@ body {
     margin: 20px;
 }
 #info:hover{
-    background-color: lightcoral;
+    background-color: darkcyan;
 }
 
 #info a, #info a:visited {

@@ -53,30 +53,30 @@
     <property name="ammo" value="10"/>
    </properties>
   </object>
-  <object id="5" name="enemy3" type="Enemy" gid="17" x="189.333" y="602.667" width="32" height="32">
+  <object id="5" name="monster31" type="Enemy" gid="17" x="189.333" y="602.667" width="32" height="32">
    <properties>
     <property name="difficulty" value="0.20000000000000001"/>
    </properties>
   </object>
-  <object id="9" name="enemy7" type="Enemy" gid="17" x="64" y="222.667" width="32" height="32">
+  <object id="9" name="monster32" type="Enemy" gid="17" x="64" y="222.667" width="32" height="32">
    <properties>
     <property name="difficulty" value="0.59999999999999998"/>
    </properties>
   </object>
-  <object id="11" name="enemy9" type="Enemy" gid="17" x="640" y="1021.33" width="32" height="32">
+  <object id="11" name="monster33" type="Enemy" gid="17" x="640" y="1021.33" width="32" height="32">
    <properties>
     <property name="difficulty" value="0.20000000000000001"/>
    </properties>
   </object>
-  <object id="23" name="enemy20" type="Enemy" gid="17" x="792" y="1184" width="32" height="32">
+  <object id="23" name="monster34" type="Enemy" gid="17" x="792" y="1184" width="32" height="32">
    <properties>
     <property name="difficulty" value="0.10000000000000001"/>
    </properties>
   </object>
   <object id="24" name="trigger_levelend" type="PlayerTrigger" gid="45" x="639" y="766" width="32" height="32"/>
-  <object id="25" name="lollipop4" gid="25" x="128" y="320" width="32" height="32"/>
-  <object id="26" name="lollipop5" gid="25" x="404" y="413.333" width="32" height="32"/>
-  <object id="28" name="lollipop6" gid="25" x="293.333" y="1100" width="32" height="32"/>
-  <object id="32" name="lollipop7" gid="25" x="545.333" y="838.667" width="32" height="32"/>
+  <object id="25" name="lollipop31" gid="25" x="128" y="320" width="32" height="32"/>
+  <object id="26" name="lollipop32" gid="25" x="404" y="413.333" width="32" height="32"/>
+  <object id="28" name="lollipop33" gid="25" x="293.333" y="1100" width="32" height="32"/>
+  <object id="32" name="lollipop34" gid="25" x="545.333" y="838.667" width="32" height="32"/>
  </objectgroup>
 </map>
