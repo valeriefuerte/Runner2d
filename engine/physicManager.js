@@ -6,9 +6,7 @@ class physicManager {
     update(obj) {
         if(obj.moveX === 0 && obj.moveY === 0 && obj.angle === null)
             return 'stop';
-
         let newX, newY;
-
         // координата
         if(obj.angle === null) {
             newX = obj.posX + Math.floor(obj.moveX * obj.speed);

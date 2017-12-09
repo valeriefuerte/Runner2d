@@ -1,12 +1,11 @@
 class EnemyBullet extends Entity {
     constructor() {
         super();
-
         this.moveX = 0;
         this.moveY = 0;
-        this.delay = 600;
+        this.delay = 600; //задержка
         this.angle = 0;
-        this.speed = 13;
+        this.speed = 10;
     }
 
     draw() {

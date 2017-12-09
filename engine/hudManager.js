@@ -45,18 +45,18 @@ class hudManager {
 
     drawPressFireText() {
         getCurrentContext().fillStyle = 'black';
-        this.drawText('Нажмите ЛКМ чтобы перейти далее', 18, getCurrentCanvas().width / 2, getCurrentCanvas().height - 30, 'bottom');
+        this.drawText('Нажмите левую кнопку мыши чтобы перейти далее', 18, getCurrentCanvas().width / 2, getCurrentCanvas().height - 30, 'bottom');
     }
 
     drawEndLevel() {
-        this.drawSubtitleText(`Убито врагов:  ${getScoreManager().currentKills()}\n Время:  ${getScoreManager().getTimeString(getScoreManager().getCurrentTime())}\n Счет:  ${getScoreManager().currentScore()}\n Очки за попадания:  ${getScoreManager().getCurrentAmmoBonus()}\n Очки за время:  ${getScoreManager().getCurrentTimeBonus()}\n\n Итог:  ${getScoreManager().getCurrentTotalScore()}`);
+        this.drawSubtitleText(`Убито:  ${getScoreManager().currentKills()}\n Время:  ${getScoreManager().getTimeString(getScoreManager().getCurrentTime())}\n Счет:  ${getScoreManager().currentScore()}\n Очки за попадания:  ${getScoreManager().getCurrentAmmoBonus()}\n Очки за время:  ${getScoreManager().getCurrentTimeBonus()}\n\n Итог:  ${getScoreManager().getCurrentTotalScore()}`);
         this.drawPressFireText();
     }
 
     drawLoadingScreen() {
         getGameManager().clearScreen();
-        this.drawTitleText(`Загрузка файлов`);
-        this.drawSubtitleText(`Это займет некоторое время`);
+        this.drawTitleText(`Подождите..`);
+        //this.drawSubtitleText(`Это займет некоторое время`);
     }
 
     drawHero(spritename) {
@@ -73,7 +73,7 @@ class hudManager {
     drawFinalText() {
 
         getCurrentContext().fillStyle = 'black';
-        this.drawText('Конец', 18, getCurrentCanvas().width / 2, getCurrentCanvas().height - 50, 'bottom');
+        this.drawText('Конец!', 18, getCurrentCanvas().width / 2, getCurrentCanvas().height - 50, 'bottom');
     }
 
 }

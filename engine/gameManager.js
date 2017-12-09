@@ -1,7 +1,7 @@
 class gameManager {
     constructor() {
         this.entities = []; // объекты
-        this.player = null;
+        this.player = null; //игрок
         this.laterKill = [];  //отложенное уничтожение
         this.worldUpdateTimer = null;
     }
@@ -13,7 +13,7 @@ class gameManager {
     kill(obj) {
         this.laterKill.push(obj);
     }
-
+    //обнорвление состояний
     update() {
         if(this.player === null) {
             return;
@@ -50,7 +50,7 @@ class gameManager {
 
 
     }
-
+    //монстры
     entity(name) {
         for(let i = 0; i < this.entities.length; i++) {
             if(this.entities[i].name === name) {
@@ -73,8 +73,6 @@ class gameManager {
 
             getHudManager().drawGameHud();
         }
-
-
     }
 
     loadScene(sc) {
@@ -90,7 +88,7 @@ class gameManager {
     }
 
     clearScreen() {
-        getCurrentContext().fillStyle = "#d59046";
+        getCurrentContext().fillStyle = "#00FFFF";
         getCurrentContext().fillRect(0, 0, getCurrentCanvas().width, getCurrentCanvas().height);
     }
 

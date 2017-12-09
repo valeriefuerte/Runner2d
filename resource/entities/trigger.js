@@ -4,10 +4,7 @@ class Trigger extends Entity {
     }
 
     draw() {}
-
     update() {}
-
     onTouchEntity(entity) {}
-
     onTouchMap(idx) {}
 }

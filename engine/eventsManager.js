@@ -25,20 +25,15 @@ class eventsManager {
         let mouseDeltaY = this.mouse.y - getGameManager().playerPosOnScreen().y;
         return { x: mouseDeltaX, y: mouseDeltaY };
     }
-
     onMouseDown(event) {
         getEventsManager().action['fire'] = true;
     }
-
     onMouseUp(event) {
         getEventsManager().action['fire'] = false;
     }
-
     onMouseMove(event) {
         getEventsManager().mouse = { x: event.clientX, y: event.clientY };
     }
-
-
     onKeyDown(event) {
         let action = getEventsManager().bind[event.keyCode];
 
@@ -46,7 +41,6 @@ class eventsManager {
             getEventsManager().action[action] = true;
         }
     }
-
     onKeyUp(event) {
         let action = getEventsManager().bind[event.keyCode];
 

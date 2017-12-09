@@ -1,8 +1,8 @@
 var gameScenes = [
     {
         sceneName: '1st level',
-        title: 'Легкий уровень',
-        subtitle: 'WASD - перемещение ЛКМ - стрельба.',
+        title: 'Первый уровень',
+        subtitle: ':Жмите WASD для перемещения, левую кнопку мыши для стрельбы.',
         map: '1stlvl.json',
         music: 'resource/sounds/1stlvl.mp3',
         hero: 'hero-1',
@@ -11,8 +11,8 @@ var gameScenes = [
 
     {
         sceneName: '2nd level',
-        title: 'Средний уровень',
-        subtitle: 'WASD - перемещение ЛКМ - стрельба.',
+        title: 'Второй уровень',
+        subtitle: 'Жмите WASD для перемещения, левую кнопку мыши для стрельбы.',
         map: '2ndlvl.json',
         music: 'resource/sounds/2ndlvl.mp3',
         hero: 'hero-2',
@@ -21,8 +21,8 @@ var gameScenes = [
 
     {
         sceneName: '3d level',
-        title: 'Тяжелый уровень',
-        subtitle: 'WASD - перемещение ЛКМ - стрельба.',
+        title: 'Третий уровень',
+        subtitle: 'Жмите WASD для перемещения, левую кнопку мыши для стрельбы.',
         map: '3dlvl.json',
         music: 'resource/sounds/3dlvl.mp3',
         hero: 'hero-3',

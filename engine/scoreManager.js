@@ -43,15 +43,15 @@ class scoreManager {
         this.tempTimer = Date.now();
     }
 
-    timerPause() {
-        this.pauseTimer = Date.now();
-    }
-
-    timerUnpause() {
-        let pause = Date.now() - this.pauseTimer;
-        this.tempTimer += pause;
-        this.pauseTimer = 0;
-    }
+    // timerPause() {
+    //     this.pauseTimer = Date.now();
+    // }
+    //
+    // timerUnpause() {
+    //     let pause = Date.now() - this.pauseTimer;
+    //     this.tempTimer += pause;
+    //     this.pauseTimer = 0;
+    // }
 
     recordTime() {
         this.storage[this.currentLevel].time = this.currentTime();

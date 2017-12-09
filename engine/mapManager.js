@@ -1,5 +1,4 @@
 class mapManager {
-
     constructor() {
         this.mapData = null; // переменная для хранения карты
         this.tLayer = null; //переменная для хранения ссылки на блоки карты (весь json tilelayer)
