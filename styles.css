@@ -14,7 +14,7 @@ body {
     transform: translateZ(0) translateX(-50%) translateY(-50%) scaleX(1.25) scaleY(1.25);
     filter: contrast(105%) brightness(120%) blur(0px) saturate(130%);
     background: url("resource/images/battleback2.png");
-    border: 5px solid darkcyan;
+    /*border: 5px solid darkcyan;*/
 }
 
 .overlay-full {
@@ -68,8 +68,8 @@ body {
     font: 50px 'arial';
     cursor: pointer;
     background: darkcyan;
-    border: 1px solid #000000;
-    color: #000000;
+    /*border: 1px solid #000000;
+    color: #000000;*/
 }
 .big-button {
     display: block;
@@ -79,12 +79,12 @@ body {
     margin-bottom: 90px;
     height: 70px;
     width: 100px;
-    border-radius: 5px;
+    /*border-radius: 5px;*/
     font: 18px 'arial';
     cursor: pointer;
     background: darkcyan;
-    border: 1px solid #000000;
-    color: #000000;
+    /*border: 1px solid #000000;
+    color: #000000;*/
     text-align: center;
 }
 
@@ -111,7 +111,7 @@ body {
     color: #000000;
     float: right;
     background-color: darkcyan;
-    border-radius: 5px;
+    /*border-radius: 5px;*/
     height: 50px;
     width: 80px;
     text-align: center;

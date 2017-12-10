@@ -11,11 +11,11 @@
 	},
 	{
 		"filename": "bullet-hud",
-		"frame": {"x":11,"y":1,"w":7,"h":16},
+		"frame": {"x":1,"y":1,"w":8,"h":4},
 		"rotated": false,
 		"trimmed": false,
-		"spriteSourceSize": {"x":0,"y":0,"w":7,"h":16},
-		"sourceSize": {"w":7,"h":16},
+		"spriteSourceSize": {"x":0,"y":0,"w":8,"h":4},
+		"sourceSize": {"w":8,"h":4},
 		"pivot": {"x":0.5,"y":0.5}
 	},
 	{

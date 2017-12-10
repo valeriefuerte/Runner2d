@@ -1,4 +1,4 @@
-class Trigger extends Entity {
+class Trigger extends Entity { //индикатор конца уровня
     constructior() {
         this.name = null;
     }
