@@ -164,9 +164,9 @@ class gameManager {
         getEventsManager().setup(getCurrentCanvas());
         getAudioManager().init();
         getAudioManager().loadArray([
-            //'resource/sounds/1stlvl.mp3',
-            //'resource/sounds/2ndlvl.mp3',
-            //'resource/sounds/3dlvl.mp3',
+            'resource/sounds/1stlvl.mp3',
+            'resource/sounds/2ndlvl.mp3',
+            'resource/sounds/3dlvl.mp3',
             'resource/sounds/death.mp3',
             //'resource/sounds/miss.mp3',
             //'resource/sounds/miss2.mp3',
