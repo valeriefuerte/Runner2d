@@ -3,7 +3,7 @@ class TestBullet extends Entity {
         super();
         this.moveX = 0;
         this.moveY = 0;
-        this.delay = 200;
+        this.delay = 200; //задержка
         this.angle = null;
         this.speed = 20;
         this.creator = null;

@@ -71,19 +71,19 @@
     <property name="ammo" value="10"/>
    </properties>
   </object>
-  <object id="6" name="monster21" type="Enemy" gid="17" x="484.667" y="1340.67" width="32" height="32">
+  <object id="6" name="monster21" type="Enemy" gid="17" x="482.667" y="1376.67" width="32" height="32">
    <properties>
     <property name="difficulty" value="0.40000000000000002"/>
    </properties>
   </object>
   <object id="14" name="trigger_levelend" type="PlayerTrigger" gid="13" x="320" y="416" width="32" height="32"/>
   <object id="15" name="trigger_levelend" type="PlayerTrigger" gid="13" x="287" y="416" width="32" height="32"/>
-  <object id="27" name="monster22" type="Enemy" gid="17" x="213" y="141" width="32" height="32">
+  <object id="27" name="monster22" type="Enemy" gid="17" x="305" y="255" width="32" height="32">
    <properties>
     <property name="difficulty" value="1"/>
    </properties>
   </object>
-  <object id="36" name="monster23" type="Enemy" gid="17" x="510" y="928" width="32" height="32">
+  <object id="36" name="monster23" type="Enemy" gid="17" x="320" y="924" width="32" height="32">
    <properties>
     <property name="difficulty" value="0.40000000000000002"/>
    </properties>

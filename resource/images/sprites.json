@@ -91,24 +91,6 @@
 		"pivot": {"x":0.5,"y":0.5}
 	},
 	{
-		"filename": "hero-4",
-		"frame": {"x":1,"y":86,"w":300,"h":83},
-		"rotated": false,
-		"trimmed": false,
-		"spriteSourceSize": {"x":0,"y":0,"w":300,"h":83},
-		"sourceSize": {"w":2,"h":10},
-		"pivot": {"x":0.5,"y":0.5}
-	},
-	{
-		"filename": "hero-5",
-		"frame": {"x":212,"y":1,"w":300,"h":83},
-		"rotated": false,
-		"trimmed": false,
-		"spriteSourceSize": {"x":0,"y":0,"w":300,"h":83},
-		"sourceSize": {"w":2,"h":10},
-		"pivot": {"x":0.5,"y":0.5}
-	},
-	{
 		"filename": "endlevel",
 		"frame": {"x":1,"y":426,"w":300,"h":83},
 		"rotated": false,

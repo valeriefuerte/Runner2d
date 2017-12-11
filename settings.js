@@ -57,7 +57,7 @@ function startLevel(lvl) { //уровень
         getGameManager().clearScreen();
         getHudManager().drawHero('endlevel');
         getHudManager().drawTitleText('Игра закончена!');
-        getHudManager().drawSubtitleText('Ваш счет: ${totalScore}');
+        getHudManager().drawSubtitleText(`Ваш счет: ${totalScore}`);
 
     }
 }

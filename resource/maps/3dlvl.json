@@ -45,8 +45,8 @@
                  "type":"Enemy",
                  "visible":true,
                  "width":32,
-                 "x":189.333333333333,
-                 "y":602.666666666667
+                 "x":65.333333333333,
+                 "y":736
                 }, 
                 {
                  "gid":17,
@@ -61,8 +61,8 @@
                  "type":"Enemy",
                  "visible":true,
                  "width":32,
-                 "x":64,
-                 "y":222.666666666667
+                 "x":552,
+                 "y":572
                 }, 
                 {
                  "gid":17,
@@ -93,8 +93,8 @@
                  "type":"Enemy",
                  "visible":true,
                  "width":32,
-                 "x":792,
-                 "y":1184
+                 "x":190.666666666667,
+                 "y":385.333333333333
                 }, 
                 {
                  "gid":45,
@@ -175,6 +175,22 @@
                  "width":32,
                  "x":545.333333333333,
                  "y":838.666666666667
+                }, 
+                {
+                 "gid":45,
+                 "height":32,
+                 "id":33,
+                 "name":"trigger_levelend",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"PlayerTrigger",
+                 "visible":true,
+                 "width":32,
+                 "x":865.333333333333,
+                 "y":1182.66666666667
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -183,7 +199,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":33,
+ "nextobjectid":34,
  "orientation":"orthogonal",
  "properties":
     {

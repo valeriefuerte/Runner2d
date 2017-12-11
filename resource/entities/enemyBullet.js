@@ -30,8 +30,8 @@ class EnemyBullet extends Entity {
                 getGameManager().reloadScene();
             } else {
                 let missSounds = [
-                    'resource/sounds/miss.mp3',
-                    'resource/sounds/miss2.mp3',
+                    //'resource/sounds/miss.mp3',
+                    //'resource/sounds/miss2.mp3',
 
                 ];
                 getAudioManager().play(missSounds[Math.floor(Math.random() * 2)]);
