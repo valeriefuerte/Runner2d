@@ -1,7 +1,7 @@
 class gameManager {
     constructor() {
         this.entities = []; // объекты
-        this.player = null; //игрок
+        this.player = null;
         this.laterKill = [];  //отложенное уничтожение
         this.worldUpdateTimer = null;
     }
@@ -13,7 +13,7 @@ class gameManager {
     kill(obj) {
         this.laterKill.push(obj);
     }
-    //обнорвление состояний
+
     update() {
         if(this.player === null) {
             return;
@@ -50,7 +50,7 @@ class gameManager {
 
 
     }
-    //монстры
+
     entity(name) {
         for(let i = 0; i < this.entities.length; i++) {
             if(this.entities[i].name === name) {
@@ -73,6 +73,8 @@ class gameManager {
 
             getHudManager().drawGameHud();
         }
+
+
     }
 
     loadScene(sc) {
@@ -83,6 +85,7 @@ class gameManager {
         getMapManager().imgLoadCounter = 0;
         getMapManager().view = {x: 0, y: 0, w: 800, h: 600};
         getMapManager().loadMap('resource/maps/' + sc.map);
+        console.log('resource/maps/' + sc.map);
         setTimeout(this.loadSceneFinish, 10);
 
     }
@@ -168,8 +171,8 @@ class gameManager {
             'resource/sounds/2ndlvl.mp3',
             'resource/sounds/3dlvl.mp3',
             'resource/sounds/death.mp3',
-            //'resource/sounds/miss.mp3',
-            //'resource/sounds/miss2.mp3',
+            'resource/sounds/miss.mp3',
+            'resource/sounds/miss2.mp3',
             'resource/sounds/shot.mp3'
         ]);
 

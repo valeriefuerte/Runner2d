@@ -1,10 +1,12 @@
 class EnemyBody extends Entity {
     constructor() {
         super();
+
         this.moveX = 0;
         this.moveY = 0;
         this.speed = 0;
         this.angle = 0;
+
         this.difficulty = 0.1;
     }
 

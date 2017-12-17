@@ -1,18 +1,19 @@
 class Enemy extends Entity {
     constructor() {
-        super(); //вызов родительского объекта
-        this.ammo = 0;      //боеприпасы
+        super();
+
+        this.ammo = 0;
         this.alive = true;
         this.moveX = 0;
         this.moveY = 0;
-        this.speed = 1;     //скорость
+        this.speed = 1;
         this.angle = 0;
         this.difficulty = 0.1;
         this.canFire = true;
         this.canTestFire = true;
-        this.noObstacles = false; //препятствия
-        this.spotRadius = 150; //радиус видимости
-        this.minSpotRadius = 150;
+        this.noObstacles = false;
+        this.spotRadius = 200;
+        this.minSpotRadius = 200;
     }
 
     draw() {
@@ -25,6 +26,7 @@ class Enemy extends Entity {
 
     update() {
         let distanceToPlayer = Math.sqrt( Math.pow(this.posX - getGameManager().player.posX, 2) + Math.pow(this.posY - getGameManager().player.posY, 2) );
+
         if( distanceToPlayer < this.minSpotRadius + this.spotRadius * this.difficulty && distanceToPlayer > 0) {
 
             let playerDelta = {
@@ -35,7 +37,7 @@ class Enemy extends Entity {
             if(this.angle < 0)
                 this.angle += Math.PI * 2;
 
-            this.speed = 2 * this.difficulty;
+            this.speed = 3 * this.difficulty;
             this.testFire();
 
             if(this.noObstacles) {
@@ -45,6 +47,7 @@ class Enemy extends Entity {
         } else {
             this.speed = 0;
         }
+
         getPhysicManager().update(this);
     }
 
@@ -62,6 +65,7 @@ class Enemy extends Entity {
             bullet.posY = this.posY;
             bullet.posX = this.posX + this.sizeX / 2 - 4 + Math.cos(this.angle) * 4;
             bullet.posY = this.posY + this.sizeY / 2 - 4 + Math.sin(this.angle) * 4;
+
 
             getGameManager().entities.push(bullet);
             getAudioManager().playWorldSound('resource/sounds/shot.mp3', this.posX, this.posY);
@@ -117,8 +121,8 @@ class Enemy extends Entity {
         let body = new EnemyBody();
         body.name = 'ebody' + (++getGameManager().fireNum);
         body.angle = this.angle - Math.PI;
-        body.sizeX = 40;
-        body.sizeY = 20;
+        body.sizeX = 43;
+        body.sizeY = 19;
         body.posX = this.posX;
         body.posY = this.posY;
         body.difficulty = this.difficulty;

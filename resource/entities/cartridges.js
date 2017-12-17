@@ -1,5 +1,7 @@
 // Поведение патронов
+
 class Cartridges extends Entity {
+
     // Создание патрона
     constructor() {
         super();
@@ -34,10 +36,12 @@ class Cartridges extends Entity {
         }
     }
 
+
     // Касание стенок карты
     onTouchMap(idx) {
         this.kill();
     }
+
 
     // Удаление
     kill() {

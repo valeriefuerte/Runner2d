@@ -76,6 +76,7 @@ class spriteManager {
 
         }
     }
+
     // получить спрайт по имени
     getSprite(name) {
         for(let sprite of this.sprites) {

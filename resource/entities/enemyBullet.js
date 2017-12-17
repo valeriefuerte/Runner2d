@@ -1,11 +1,12 @@
 class EnemyBullet extends Entity {
     constructor() {
         super();
+
         this.moveX = 0;
         this.moveY = 0;
-        this.delay = 600; //задержка
+        this.delay = 600;
         this.angle = 0;
-        this.speed = 10;
+        this.speed = 13;
     }
 
     draw() {
@@ -30,8 +31,8 @@ class EnemyBullet extends Entity {
                 getGameManager().reloadScene();
             } else {
                 let missSounds = [
-                    //'resource/sounds/miss.mp3',
-                    //'resource/sounds/miss2.mp3',
+                    'resource/sounds/miss.mp3',
+                    'resource/sounds/miss2.mp3',
 
                 ];
                 getAudioManager().play(missSounds[Math.floor(Math.random() * 2)]);

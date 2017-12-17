@@ -1,6 +1,7 @@
-//Настройки игры
+
 var levelBriefDuration = 8000;
-var gameSpeed = 15;
+var gameSpeed = 20;
+
 var map  = new mapManager();
 var sprite  = new spriteManager();
 var events  = new eventsManager();
@@ -21,11 +22,11 @@ function getHudManager() { return hud; }
 function getAudioManager() { return audio; }
 function getScoreManager() { return score; }
 
-function completedLevel(l) { //конец уровня и переход к следующему
+function completedLevel(l) {
     startLevel(l + 1);
 }
 
-function startLevel(lvl) { //уровень
+function startLevel(lvl) {
     if(lvl < gameScenes.length) {
         getAudioManager().stopAll();
         getAudioManager().play(gameScenes[lvl].music, { looping: true });
@@ -57,16 +58,19 @@ function startLevel(lvl) { //уровень
         getGameManager().clearScreen();
         getHudManager().drawHero('endlevel');
         getHudManager().drawTitleText('Игра закончена!');
-        getHudManager().drawSubtitleText(`Ваш счет: ${totalScore}`);
+        getHudManager().drawSubtitleText(`Ваш текущий счет: ${totalScore}`);
 
     }
 }
 
 // Загрузка ресурсов игры
 function resourcesLoaded() {
+
     // Начало игры
     setTimeout( () => { startLevel(getScoreManager().currentLevel) }, 100 );
+
     console.log('loaded all');
+    //getHudManager().drawHero('endlevel');
 }
 
 function storageAvailable(type) {
@@ -91,7 +95,7 @@ function storageAvailable(type) {
 function div(val, by){
     return (val - val % by) / by;
 }
-//Таблица рекордов
+
 function scoreboard(scoreTable) {
     let scoreboardElement = document.getElementById('scoreboard');
     let scoreboardTextElement = document.getElementById('scoreboard-text');
@@ -114,7 +118,8 @@ function scoreboard(scoreTable) {
 
 
 function launch() {
-        getScoreManager().load();
-        getGameManager().loadResources();
-        document.getElementById('overlay').style.display = 'none';
+    getScoreManager().load();
+    getGameManager().loadResources();
+    document.getElementById('overlay').style.display = 'none';
 }
+

@@ -1,4 +1,5 @@
 class mapManager {
+
     constructor() {
         this.mapData = null; // переменная для хранения карты
         this.tLayer = null; //переменная для хранения ссылки на блоки карты (весь json tilelayer)
@@ -15,11 +16,15 @@ class mapManager {
     }
 
     loadMap(path) { // загрузка json-а карты с помощью асинхронного запроса
+
+        console.log(path);
         let request = new XMLHttpRequest();
         request.onreadystatechange = () => {
+            console.log(request.readyState);
+            console.log(request.status);
             if (request.readyState === 4 && request.status === 200) {
                 // получен корректный результат
-                this.parseMap(request.responseText);
+                getMapManager().parseMap(request.responseText);
             }
         };
 

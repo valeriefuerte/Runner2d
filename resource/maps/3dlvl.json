@@ -23,7 +23,7 @@
                  "name":"player",
                  "properties":
                     {
-                     "ammo":"10"
+                     "ammo":"150"
                     },
                  "rotation":0,
                  "type":"Player",
@@ -36,7 +36,7 @@
                  "gid":17,
                  "height":32,
                  "id":5,
-                 "name":"monster31",
+                 "name":"enemy31",
                  "properties":
                     {
                      "difficulty":"0.20000000000000001"
@@ -52,7 +52,7 @@
                  "gid":17,
                  "height":32,
                  "id":9,
-                 "name":"monster32",
+                 "name":"enemy32",
                  "properties":
                     {
                      "difficulty":"0.59999999999999998"
@@ -68,7 +68,7 @@
                  "gid":17,
                  "height":32,
                  "id":11,
-                 "name":"monster33",
+                 "name":"enemy33",
                  "properties":
                     {
                      "difficulty":"0.20000000000000001"
@@ -84,7 +84,7 @@
                  "gid":17,
                  "height":32,
                  "id":23,
-                 "name":"monster34",
+                 "name":"enemy34",
                  "properties":
                     {
                      "difficulty":"0.10000000000000001"
@@ -111,70 +111,6 @@
                  "width":32,
                  "x":639,
                  "y":766
-                }, 
-                {
-                 "gid":25,
-                 "height":32,
-                 "id":25,
-                 "name":"lollipop31",
-                 "properties":
-                    {
-
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":128,
-                 "y":320
-                }, 
-                {
-                 "gid":25,
-                 "height":32,
-                 "id":26,
-                 "name":"lollipop32",
-                 "properties":
-                    {
-
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":404,
-                 "y":413.333333333333
-                }, 
-                {
-                 "gid":25,
-                 "height":32,
-                 "id":28,
-                 "name":"lollipop33",
-                 "properties":
-                    {
-
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":293.333333333333,
-                 "y":1100
-                }, 
-                {
-                 "gid":25,
-                 "height":32,
-                 "id":32,
-                 "name":"lollipop34",
-                 "properties":
-                    {
-
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":545.333333333333,
-                 "y":838.666666666667
                 }, 
                 {
                  "gid":45,

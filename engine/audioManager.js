@@ -1,4 +1,5 @@
 class audioManager {
+
     constructor() {
         this.clips = {};
         this.context = null;
@@ -8,6 +9,7 @@ class audioManager {
         this.defaultFrequency = 6600;
         this.lowFrequency = 150;
     }
+
     // инициализация менеджера звука
     init() {
         this.context = new AudioContext(); // создание контекста звука
@@ -18,6 +20,7 @@ class audioManager {
         this.filter.type = "lowpass";
         this.filter.frequency.value = this.defaultFrequency;
     }
+
     load(path, callback) {
         if(this.clips[path]) {
             callback(this.clips[path]);

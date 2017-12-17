@@ -23,7 +23,7 @@
                  "name":"player",
                  "properties":
                     {
-                     "ammo":"10"
+                     "ammo":"100"
                     },
                  "rotation":0,
                  "type":"Player",
@@ -36,7 +36,7 @@
                  "gid":17,
                  "height":32,
                  "id":2,
-                 "name":"monster11",
+                 "name":"enemy11",
                  "properties":
                     {
                      "difficulty":"0.29999999999999999"
@@ -52,7 +52,7 @@
                  "gid":17,
                  "height":32,
                  "id":5,
-                 "name":"monster12",
+                 "name":"enemy12",
                  "properties":
                     {
                      "difficulty":"0.40000000000000002"
@@ -95,54 +95,6 @@
                  "width":32,
                  "x":896,
                  "y":736
-                }, 
-                {
-                 "gid":25,
-                 "height":32,
-                 "id":21,
-                 "name":"lollipop12",
-                 "properties":
-                    {
-
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":734,
-                 "y":448
-                }, 
-                {
-                 "gid":25,
-                 "height":32,
-                 "id":22,
-                 "name":"lollipop11",
-                 "properties":
-                    {
-
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":222,
-                 "y":680
-                }, 
-                {
-                 "gid":25,
-                 "height":32,
-                 "id":26,
-                 "name":"lollipop13",
-                 "properties":
-                    {
-
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":772,
-                 "y":742
                 }],
          "opacity":1,
          "type":"objectgroup",

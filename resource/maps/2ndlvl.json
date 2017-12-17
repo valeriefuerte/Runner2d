@@ -23,7 +23,7 @@
                  "name":"player",
                  "properties":
                     {
-                     "ammo":"10"
+                     "ammo":"150"
                     },
                  "rotation":0,
                  "type":"Player",
@@ -36,7 +36,7 @@
                  "gid":17,
                  "height":32,
                  "id":6,
-                 "name":"monster21",
+                 "name":"enemy21",
                  "properties":
                     {
                      "difficulty":"0.40000000000000002"
@@ -84,7 +84,7 @@
                  "gid":17,
                  "height":32,
                  "id":27,
-                 "name":"monster22",
+                 "name":"enemy22",
                  "properties":
                     {
                      "difficulty":"1"
@@ -100,7 +100,7 @@
                  "gid":17,
                  "height":32,
                  "id":36,
-                 "name":"monster23",
+                 "name":"enemy23",
                  "properties":
                     {
                      "difficulty":"0.40000000000000002"
@@ -143,70 +143,6 @@
                  "width":32,
                  "x":353,
                  "y":415
-                }, 
-                {
-                 "gid":25,
-                 "height":32,
-                 "id":46,
-                 "name":"lollipop21",
-                 "properties":
-                    {
-
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":119,
-                 "y":1441
-                }, 
-                {
-                 "gid":25,
-                 "height":32,
-                 "id":47,
-                 "name":"lollipop22",
-                 "properties":
-                    {
-
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":92,
-                 "y":1069
-                }, 
-                {
-                 "gid":25,
-                 "height":32,
-                 "id":48,
-                 "name":"lollipop23",
-                 "properties":
-                    {
-
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":313,
-                 "y":866
-                }, 
-                {
-                 "gid":25,
-                 "height":32,
-                 "id":50,
-                 "name":"lollipop24",
-                 "properties":
-                    {
-
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":287,
-                 "y":574
                 }],
          "opacity":1,
          "type":"objectgroup",

@@ -3,18 +3,20 @@ class eventsManager {
         this.bind = [];
         this.action = [];
         this.mouse = { x: 0, y: 0 };
+        this.canvas = null;
     }
 
     setup(canvas) {
+        this.canvas = canvas;
         this.bind[87] = 'up';
         this.bind[65] = 'left';
         this.bind[83] = 'down';
         this.bind[68] = 'right';
         this.bind[32] = 'fire';
         this.bind[82] = 'restart';
-        window.addEventListener('mousedown', this.onMouseDown);
-        window.addEventListener('mouseup', this.onMouseUp);
-        window.addEventListener('mousemove', this.onMouseMove);
+        this.canvas.addEventListener('mousedown', this.onMouseDown);
+        this.canvas.addEventListener('mouseup', this.onMouseUp);
+        this.canvas.addEventListener('mousemove', this.onMouseMove.bind(this));
         document.body.addEventListener('keydown', this.onKeyDown);
         document.body.addEventListener('keyup', this.onKeyUp);
     }
@@ -25,15 +27,22 @@ class eventsManager {
         let mouseDeltaY = this.mouse.y - getGameManager().playerPosOnScreen().y;
         return { x: mouseDeltaX, y: mouseDeltaY };
     }
+
     onMouseDown(event) {
         getEventsManager().action['fire'] = true;
     }
+
     onMouseUp(event) {
         getEventsManager().action['fire'] = false;
     }
+
     onMouseMove(event) {
-        getEventsManager().mouse = { x: event.clientX, y: event.clientY };
+        console.log('mouse move');
+        this.mouse = { x: event.clientX, y: event.clientY };
+        console.log(this.mouse.x + " " + this.mouse.y);
     }
+
+
     onKeyDown(event) {
         let action = getEventsManager().bind[event.keyCode];
 
@@ -41,6 +50,7 @@ class eventsManager {
             getEventsManager().action[action] = true;
         }
     }
+
     onKeyUp(event) {
         let action = getEventsManager().bind[event.keyCode];
 
